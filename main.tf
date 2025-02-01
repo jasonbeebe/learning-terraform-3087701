@@ -49,7 +49,7 @@ module "alb" {
   subnets = module.blog_vpc.public_subnets
   security_groups = module.blog_sg.security_group_id
 
-http_listeners [
+http_listeners = [
   {
     port               = 80
     protocol           = http
