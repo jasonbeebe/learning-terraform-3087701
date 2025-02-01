@@ -1,3 +1,3 @@
-output = "evironment_url" {
+output "evironment_url" {
     value = module.qa.evironment_url
 }
